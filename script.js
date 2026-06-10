@@ -396,7 +396,7 @@ gameLoop();
 
 // ─── COPIAR LINK ──────────────────────────────────────────────────────────
 function copyLink() {
-    navigator.clipboard.writeText('https://ponggame.com/').then(() => {
+    navigator.clipboard.writeText('https://ponggamee.vercel.app/').then(() => {
         const toast = document.getElementById('copyToast');
         toast.style.display = 'inline';
         setTimeout(() => { toast.style.display = 'none'; }, 2500);

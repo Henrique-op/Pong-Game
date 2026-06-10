@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ═══ SEO BÁSICO ═══════════════════════════════════════════════════ -->
+    <title>Pong Game - Play Free Online \ Classic Arcade Game</title>
+    <meta name="description" content="Play the classic Pong arcade game for free online. Challenge an intelligent AI in this timeless 2-player style game. Works on mobile and desktop — no download needed!">
+    <meta name="keywords" content="pong game, play pong online, free arcade game, classic pong, online pong, browser game, retro game">
+    <meta name="author" content="Pong Game">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yoursite.com/">
+
+    <!-- ═══ OPEN GRAPH (Facebook, LinkedIn, etc.) ═══════════════════════ -->
+    <meta property="og:title" content="Pong Game - Play Free Online">
+    <meta property="og:description" content="Play the classic Pong arcade game for free online. Challenge an intelligent AI in this timeless 2-player style game. Works on mobile and desktop — no download needed!">
+    <meta property="og:image" content="https://yoursite.com/og-image.png">
+    <meta property="og:url" content="https://yoursite.com/">
+    <meta property="og:type" content="website">
+
+    <!-- ═══ TWITTER CARD ════════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pong Game - Play Free Online">
+    <meta name="twitter:description" content="Challenge an intelligent AI in the classic Pong game. Free, instant play — no download, no login!">
+    <meta name="twitter:image" content="https://yoursite.com/og-image.png">
+
+    <!-- ═══ SCHEMA.ORG (rich results no Google) ═════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Pong Game",
+      "description": "Play the classic Pong arcade game for free online. Challenge an intelligent AI — no download or login required.",
+      "url": "https://yoursite.com/",
+      "genre": "Arcade",
+      "gamePlatform": "Web Browser",
+      "operatingSystem": "Any",
+      "applicationCategory": "Game",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- ═══ GOOGLE TAG MANAGER ══════════════════════════════════════════ -->
+    <!-- Substitui GTM-XXXXXXX pelo teu ID do GTM -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K5QV394W');</script>
+    <!-- Fim GTM head -->
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2623532298232783"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ═══ GOOGLE TAG MANAGER (noscript) ═══════════════════════════════ -->
+    <!-- Substitui GTM-XXXXXXX pelo teu ID do GTM -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5QV394W"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Fim GTM body -->
+
+    <div class="container">
+        <h1>PONG GAME</h1>
+
+        <!-- ═══ DESCRIÇÃO — para quem é o jogo ══════════════════════════ -->
+        <div class="game-description">
+            <p>
+                🎮 <strong>Classic Pong</strong> reimagined for everyone — whether you're
+                <strong>a kid discovering arcade games for the first time</strong>,
+                a <strong>retro gamer</strong> feeling nostalgic, or just looking for
+                a <strong>quick and fun challenge</strong> during your break.
+            </p>
+            <p>
+                No download. No login. Just press <strong>START</strong> and beat the AI. 🏆
+            </p>
+         </div>
+
+         <!-- AdSense Top Banner -->
+         <div class="ad-container">
+            <ins class="adsbygoogle"
+              style="display:block; text-align:center;"
+              data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-2623532298232783"
+             data-ad-slot="5934276541"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+         </div>
+
+         <div class="scoreboard">
+            <div class="score">
+                <h2>You</h2>
+                <p id="playerScore">O</p>
+            </div>
+            <div class="score">
+                <h2>AI</h2>
+                <p id="computerScore">0</p>
+            </div>
+         </div>
+
+         <div class="game-wrapper">
+            <canvas id="pongCanvas" width="800" height="400"></canvas>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls">
+                <button class="control-btn up-btn" id="upBtn">▲ UP</button>
+                <button class="control-btn pause-btn" id="pauseBtn">⏸ START</button>
+                <button class="control-btn down-btn" id="downBtn">▼ DOWN</button>
+            </div>
+        </div>
+            1
+        <!-- AdSense Sidebar Left -->
+        <div class="ad-sidebar-left">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2623532298232783"
+                  data-ad-slot="8560439883"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+         </div>
+
+         <div class="controls">
+            <h3>📱 How to Play:</h3>
+            <p><strong>Desktop:</strong> Use your mouse 🖱️ or arrow keys ⬆️⬇️</p>
+            <p><strong>Mobile:</strong> Tap the UP/DOWN buttons</p>
+            <p><strong>Start Game:</strong> Press SPACE or tap the START button</p>
+            <p>⚠️ <strong>AI Difficulty:</strong> Hard Mode — the AI is intelligent and will try to beat you!</p>
+        </div>
+          
+         <!-- ═══ BOTÕES DE PARTILHA ════════════════════════════════════════════ -->
+         <div class="share-section">
+         <p class="share-label">🔗 Share the game</p>
+         <div class="share-buttons">
+
+         <!-- WhatsApp -->
+         <a class="share-btn btn-whatsapp"
+         href="https://api.whatsapp.com/send?text=Play%20the%20classic%20Pong%20online%20%E2%80%94%20free%2C%20no%20download!%20%F0%9F%8F%93%20https%3A%2F%2Fponggame.com%2F"
+         target="_blank" rel="noopener">
+         WhatsApp
+         </a>
+
+         <!-- Facebook -->
+         <a class="share-btn btn-facebook"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fponggame.com%2F"
+         target="_blank" rel="noopener">
+         Facebook
+         </a>
+
+         <!-- X / Twitter -->
+         <a class="share-btn btn-twitter"
+          href="https://twitter.com/intent/tweet?text=Play%20the%20classic%20Pong%20online%20%F0%9F%8F%93%20%E2%80%94%20free%2C%20no%20download!&url=https%3A%2F%2Fponggame.com%2F"
+          target="_blank" rel="noopener">
+          X (Twitter)
+         </a>
+
+         <!-- Telegram -->
+         <a class="share-btn btn-telegram"
+         href="https://t.me/share/url?url=https%3A%2F%2Fponggame.com%2F&text=Play%20the%20classic%20Pong%20online%20%F0%9F%8F%93%20%E2%80%94%20free%2C%20no%20download!"
+         target="_blank" rel="noopener">
+         Telegram
+         </a>
+
+          <!-- Copiar link -->
+           <button class="share-btn btn-copy" onclick="copyLink()">
+           Copy link
+          </button>
+          <span id="copyToast" style="display:none; color:#00ff88; font-size:0.85em;">✓ Link copied!</span>
+          </div>
+        </div>
+
+        <!-- AdSense Bottom Banner -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2623532298232783"
+             data-ad-slot="7251924772"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Privacy & Policies Footer -->
+        <div class="policy-footer">
+            <p><strong>© 2026 Pong Game. All rights reserved.</strong></p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Service</a> |
+                <a href="contact.html">Contact</a>
+            </p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                🛡️ This site uses Google AdSense. All ads are family-safe and appropriate for all audiences.
+                <br>We comply with GDPR, COPPA, and CCPA regulations. No personal data is collected or sold.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Nota: adiciona o bloco abaixo ao teu styles.css -->
